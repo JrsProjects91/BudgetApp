@@ -1,0 +1,219 @@
+    .alfa-slab-one-regular {
+        font-family: "Alfa Slab One", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    input,
+    button {
+        font: inherit;
+    }
+
+    body {
+        display: grid;
+        grid-template: repeat(9, auto) / repeat(4, 1fr);
+        padding-left: 5rem;
+        padding-right: 5rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.2rem;
+        background-color: #6f7a70;
+        gap: 1em;
+        box-sizing: border-box;
+
+    }
+
+    .left-container {
+        grid-area: 2 / 1 / auto / 3;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-bottom: 25px;
+
+    }
+
+    .right-container {
+        grid-area: 2 / 3 / auto / 5;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        gap: 20px;
+    }
+
+    .bottom-container {
+        grid-area: 4 / 1 / 9 /6;
+    }
+
+    .info>.form-box {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .total-containers {
+        display: flex;
+    }
+
+    .bills-input-container > .form-box > input{
+        width: 15%;
+    }
+
+    .bills-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-box > .inputs > input{
+        width: 80%;
+    }
+
+    .debts-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food-totals {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .total-debt-container .form-box,
+    .debt-credits-container .form-box,
+    .food-container>.form-box {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .debt-credits-container {
+        flex-direction: row;
+    }
+
+
+    .debts-container,
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    .bills-food-container {
+        display: flex;
+    }
+
+    .main-debt-container,
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs {
+        grid-area: 1 / 1 / 2 / 5;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .item {
+        width: 100%;
+        display: flex;
+
+    }
+
+
+    .tabs button {
+        padding: 13px;
+    }
+
+    .deleteButton {
+        margin-left: auto;
+    }
+
+    .info {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .input {
+        display: flex;
+    }
+
+    .inputs {
+        font-size: 1.1rem;
+    }
+
+    .input>input {
+        margin-left: auto;
+    }
+
+    .food-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3 {
+        margin: 0 0 10px 0;
+        text-align: center;
+        color: #d42f2c;
+        font-family: "Alpha Slab One";
+    }
+
+    .form-box {
+
+        background-color: #c9e2df;
+        border-radius: 7px;
+        border-color: none;
+        box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.61);
+        padding: .5em 1em 1em 1em;
+    }
+
+    .entries {
+        padding-top: 10px;
+    }
+
+    .item:hover {
+        background-color: #b6ccc9;
+
+    }
+
+    button {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-color:#73b3a5;
+        border-radius: 5px;
+        background-color: #73b3a5;
+    }
+
+
+    @media screen and (max-width: 800px) {
+        body {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+;
+        }
+        .left-container {
+            grid-area: 1 / 1 / 2 / 2;
+            width: 80vw;
+            
+        }
+        .right-container {
+            grid-area: 2 / 1 / 3 / 2;
+            width: 80vw;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+

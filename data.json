@@ -1,0 +1,63 @@
+{
+  "currentWeek": "2025-11-30T05:00:00.000Z",
+  "bills": [
+    {
+      "name": "Empty",
+      "amount": 0,
+      "date": 3,
+      "id": 5
+    }
+  ],
+  "totals": [
+    {
+      "monthly_bills_total": 0,
+      "weekly_bills_total": 0,
+      "monthly_total_debt": 0,
+      "weekly_total_debt": 0,
+      "per_day_total": 0,
+      "weekly_total": 0,
+      "weekly_income": 0,
+      "carry_total": 0
+    }
+  ],
+  "debt": [
+    {
+      "total_debt": 0,
+      "total_debt_adjusted": 0,
+      "weeks_left": 0,
+      "total_debt_adjustments": 0
+    }
+  ],
+  "debt_expenses": [
+    {
+      "name": "Empty",
+      "amount": 0,
+      "date": "2025-11-08",
+      "id": 1
+    }
+  ],
+  "food_expenses": [
+    {
+      "name": "Empty",
+      "amount": 0,
+      "date": "2025-11-02",
+      "id": 2
+    }
+  ],
+  "weekly_adjustments": [
+    {
+      "name": "Empty",
+      "amount": 0,
+      "date": "2025-11-02",
+      "id": 3
+    }
+  ],
+  "carry_over": [
+    {
+      "name": "Empty",
+      "amount": 0,
+      "date": "2025-11-08",
+      "id": 4
+    }
+  ]
+}

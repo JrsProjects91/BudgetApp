@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="tabs">
+        <button id="save">Save Data</button>
+        <div class="form-box">
+            <label for="week">Week</label>
+            <input type="date" name="week" id="week">
+            <button type="button" id="update_week">Update</button>
+        </div>
+    </div>
+
+    <div class="left-container">
+        <div class="info">
+            <div class="form-box">
+                <h3>Remaining</h3>
+                <div class="total-containers">
+                    <div class="left-container-totals">
+                        <div>Total Remaining Debt</div>
+                        <div id="total_remaining_debt">0</div>
+
+                        <div>Monthly Bill Amount</div>
+                        <div id="monthly_bill_display">0</div>
+
+                        <div>Weekly Bill Amount</div>
+                        <div id="weekly_bill_amount">0</div>
+
+                        <div>Weekly Debt Amount</div>
+                        <div id="weekly-debt-amount">0</div>
+
+                    </div>
+                    <div class="right-container-totals">
+                        <div>Total Monthly Bill Amount w/ Debt</div>
+                        <div id="total_monthly_bill_display">0</div>
+
+                        <div>Total Weekly Bill Amount w/Debt</div>
+                        <div id="total_weekly_bill_amount">0</div>
+
+                        <div>Dailty Total Income Needed</div>
+                        <div id="daily_income_needed">0</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bills-input-container">
+            <div class="form-box">
+                <h3>Monthly Bills</h3>
+                <label for="bill_name">Bill Name</label>
+                <input type="text" name="bill_name" id="bill_name">
+
+                <label for="bill_amount">Amount</label>
+                <input type="number" name="bill_amount" id="bill_amount">
+
+                <label for="bill_day">Day</label>
+                <input type="number" name="bill_day" id="bill_date">
+                <button type="button" id="add_bill">Add</button>
+                <div id="bills-field" class="entries"></div>
+            </div>
+        </div>
+        <div class="carry-over-container">
+            <div class="form-box">
+                <h3>Weekly Carry Over</h3>
+                <div class="inputs">
+                    <label for="carry_name">Name</label>
+                    <input type="text" name="carry_name" id="carry_name">
+
+                    <label for="carry_amount">Amount</label>
+                    <input type="number" name="carry_amount" id="carry_amount">
+
+                    <label for="carry_date">Date</label>
+                    <input type="date" name="carry_date" id="carry_date">
+                    <button type="button" id="add_carry">Add</button>
+                </div>
+                <div id="carry_container" class="entries"></div>
+                <div class="carry-over-total">Carry Over Total</div>
+                <div id="carry_over_total">0</div>
+            </div>
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="total-debt-container">
+            <div class="form-box">
+                <h3>Total Debt</h3>
+                <div class="inputs">
+
+                    <label for="total_debt">Total Debt</label>
+                    <input type="number" name="total_debt" id="total_debt">
+
+                    <label for="debt_weeks">Weeks left</label>
+                    <input type="number" name="debt_weeks" id="debt_weeks">
+
+                    <label for="day">Work Day</label>
+                    <input type="number" name="day" id="day">
+
+
+                    <button type="button" id="update_debt">Update</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="debt-credits-container">
+            <div class="form-box">
+                <h3>Debt Credits / Debits</h3>
+                <div class="inputs">
+
+                    <label for="debt_name">Name</label>
+                    <input type="text" name="debt_name" id="debt_name">
+
+                    <label for="debt_amount">Amount</label>
+                    <input type="number" name="debt_amount" id="debt_amount">
+
+                    <label for="debt_date">Date</label>
+                    <input type="date" name="debt_date" id="debt_date">
+
+
+
+                    <button type="button" id="add_debt">Add</button>
+                </div>
+                <div id="debts-container" class="entries"></div>
+            </div>
+        </div>
+
+
+
+        <div class="food-container">
+            <div class="form-box">
+                <h3>Food Expenses</h3>
+                <div class="inputs"> <label for="food_name">Food Name</label>
+                    <input type="text" name="food_name" id="food_name">
+
+                    <label for="food_amount">Amount</label>
+                    <input type="number" name="food_amount" id="food_amount">
+
+                    <label for="food_date">Date</label>
+                    <input type="date" name="food_date" id="food_date">
+                    <button type="button" id="add_food">Add</button>
+                </div>
+                <div id="food-container" class="entries"></div>
+                <div class="food-totals">
+                    <div>Total Spent This Week </div>
+                    <div id="food-total"></div>
+                    <div>Remaining Food Budget </div>
+                    <div id="food-left"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="income-container">
+            <div class="form-box">
+                <h3>Daily Income / Expenses</h3>
+                <div class="inputs">
+                    <label for="expense_name">Name</label>
+                    <input type="text" name="expense_name" id="expense_name">
+
+                    <label for="expense_amount">Amount</label>
+                    <input type="number" name="expense_amount" id="expense_amount">
+
+                    <label for="expense_date">Date</label>
+                    <input type="date" name="expense_date" id="expense_date">
+                    <button type="button" id="add_expense">Add</button>
+                </div>
+                <div id="income_container" class="entries"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottom-container">
+    </div>
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
