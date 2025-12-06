@@ -1,53 +1,29 @@
-# 📦 My Package
+# 📦 HTML Browser Budgeting App V0.1
 
-(add your badges here)
-
-> *Your documentation is a direct reflection of your software, so hold it to the same standards.*
-
+![alt text](https://github.com/JrsProjects91/BudgetApp/blob/main/budget_app.png "Budget App v0.1")
 
 ## 🌟 Highlights
 
-- Some functionality made easy!
-- This problem handled
-- etc.
-
+- Calculates needed income per day, week and month to reach user's goals. 
+- Debt Payoff Tracker
+- Income / Expenses / Food Budget Tracking
+- Exporable Data to a .json backup file
 
 ## ℹ️ Overview
 
-A paragraph explaining your work, who you are, and why you made it.
+A simple in browser budgeting app using vanilla HTML, CSS and Javascript. This app allows the user to input a "Debt" or a monetary goal they are trying to reach and calculates how much income is needed to reach said goal. The user also has a weekly "Food Budget" and "Carry Over" section. If the budget for food goes over the amount then it will add to the remaining needed weekly income. The Carry Over section allows the user to add extra funds at the end of the week to a seperate running total. 
+
+(To be able to read your saved data you must allow your browser to load the .json file that is generated.)
+(Allow Access To File) in Google Chrome.
 
 
-### ✍️ Authors
+### TODO LIST
 
-Mention who you are and link to your GitHub or organization's website.
-
-
-## 🚀 Usage
-
-*Show off what your software looks like in action! Try to limit it to one-liners if possible and don't delve into API specifics.*
-
-```py
->>> import mypackage
->>> mypackage.do_stuff()
-'Oh yeah!'
-```
+1. Allow user to change the start day of the work week (Currently set as Sunday to Saturday).
+2. Add "Edit" button to entries.
+3. Find way to allow data.json file to be read automatically, possibly write data to html? 
+4. Clean up Javascript and CSS. (currently very messy).
+5. Allow user to edit weekly "Food Budget" (currently set at $70).
 
 
-## ⬇️ Installation
 
-Simple, understandable installation instructions!
-
-```bash
-pip install my-package
-```
-
-And be sure to specify any other minimum requirements like Python versions or operating systems.
-
-*You may be inclined to add development instructions here, don't.*
-
-
-## 💭 Feedback and Contributing
-
-Add a link to the Discussions tab in your repo and invite users to open issues for bugs/feature requests.
-
-This is also a great place to invite others to contribute in any ways that make sense for your project. Point people to your DEVELOPMENT and/or CONTRIBUTING guides if you have them.
